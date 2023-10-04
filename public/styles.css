@@ -1,0 +1,97 @@
+body {
+  background: #eeeeee;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+.header {
+  background-color: #886024;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
+  width: 100%;
+  padding: 15px 0;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 30%);
+  margin-bottom: 10px;
+}
+
+.heading {
+  color: #ffffff;
+  margin: 0 0 0 45px;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.node {
+  background: #eeeeee;
+  border: solid 1px rgb(0, 79, 112);
+  height: 30px;
+  width: 30px;
+}
+
+.wall {
+  background: rgb(0, 79, 112);
+  transition: 100ms;
+  transition-timing-function: ease-out;
+}
+
+.start {
+  background: green;
+}
+
+.end {
+  background: red;
+}
+
+.path {
+  background: yellow;
+}
+
+.explored {
+  background: #5cd0e8;
+  transition: 10ms;
+  transition-timing-function: ease-out;
+}
+
+.visited {
+  background: #1abc9c;
+  transition: 10ms;
+  transition-timing-function: ease-out;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.visualize {
+  width: 150px;
+  height: 50px;
+  margin: 2%;
+  border-radius: 5px;
+  background: transparent;
+  color: #000;
+  font-family: "Pacifico", cursive;
+  font-size: 20px;
+}
+
+.visualize:hover {
+  background: #b97339;
+  color: #fff;
+  transition: 300ms;
+}
+
+#Footer {
+  height: 40px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-top: 10px;
+  text-align: center;
+  color: black;
+  font-weight: 600;
+}
