@@ -7,6 +7,10 @@ You can access the website at this link https://pathfinderr-visualiser.netlify.a
 ### Screenshot
 
 ![image](https://github.com/Living-Hell/PathfindingVisualizer/assets/74912161/7b2806ef-6065-4c11-99c2-04bdfd320bdb)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 65f4e5e63c4f4fa07458fdce895c5eedd6a27451
 
 ## Algorithms
 
