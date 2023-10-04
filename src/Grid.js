@@ -4,6 +4,7 @@ import Node from "./Node";
 import dijkstra from "./Dijkstra";
 import BestFirstSearch from "./BestFirstSearch";
 import Astar from "./Astar";
+import DFS from "./DFS";
 
 const ROW_SIZE = 15;
 const COLUMN_SIZE = 50;
@@ -101,7 +102,7 @@ export default function Grid() {
   };
 
   return (
-    <div>
+    <div className="grid">
       <h1 style={{ display: "none" }}>{test}</h1>
       {boardState.map((ROW, row) => {
         return (
@@ -153,6 +154,14 @@ export default function Grid() {
           className="visualize"
         >
           Visualize Greedy Best First Search
+        </button>
+        <button
+          onClick={() =>
+            visualizeBool && DFS(board, markVisited, markExplored, markPath)
+          }
+          className="visualize"
+        >
+          Visualize DFS
         </button>
         <button
           onClick={() => resetBool && resetBoard(board)}
