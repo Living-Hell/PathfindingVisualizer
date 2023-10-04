@@ -6,7 +6,7 @@ You can access the website at this link https://pathfinderr-visualiser.netlify.a
 
 ### Screenshot
 
-![Website Screenshot](https://github.com/Living-Hell/PathfindingVisualizer/blob/main/public\PathfindingVisualizerSS.png)
+![image](https://github.com/Living-Hell/PathfindingVisualizer/assets/74912161/7b2806ef-6065-4c11-99c2-04bdfd320bdb)
 
 ## Algorithms
 
@@ -15,3 +15,5 @@ You can access the website at this link https://pathfinderr-visualiser.netlify.a
 **Greedy Best First Search Algorithm**: It is an extremely fast algorithm which works on the heuristic of shortest distance from the current node to the destination node. The downside of this algorithm is that it does not always guarantee the shortest path.
 
 **A \* Algorithm**: This is the best pathfinding algorithm. It's heuristic function works on the summation of shortest distance from source to current node and from the current node to the destination node. It works faster than dijkstra and always guarantees the shortest path if it exists.
+
+**DFS Algorithm**: Depth First Search is a slow algorithm because it explores as deeply as possible along a branch before backtracking. It repeats this process to visit the other unvisited branches until all nodes are visited or a specific target is found. This algorithm doesn't give the shortest path since it's an unweighted algorithm.
