@@ -6,7 +6,7 @@ body {
 }
 
 .header {
-  background-color: #886024;
+  background-color: #003152;
   background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
   width: 100%;
   padding: 15px 0;
@@ -38,22 +38,12 @@ body {
   width: 30px;
 }
 
-.wall {
-  background: rgb(0, 79, 112);
-  transition: 100ms;
-  transition-timing-function: ease-out;
-}
-
 .start {
-  background: green;
+  background: #08f26e;
 }
 
 .end {
-  background: red;
-}
-
-.path {
-  background: yellow;
+  background: #ff0800;
 }
 
 .explored {
@@ -63,9 +53,68 @@ body {
 }
 
 .visited {
-  background: #1abc9c;
-  transition: 10ms;
-  transition-timing-function: ease-out;
+  animation-name: visitedAnimation;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes visitedAnimation {
+  0% {
+    transform: scale(0.3);
+    background-color: rgba(0, 0, 66, 0.75);
+    border-radius: 100%;
+  }
+
+  50% {
+    background-color: rgba(17, 104, 217, 0.75);
+  }
+
+  75% {
+    transform: scale(1.2);
+    background-color: rgba(0, 217, 159, 0.75);
+  }
+
+  100% {
+    transform: scale(1);
+    background-color: rgba(0, 190, 218, 0.75);
+  }
+}
+
+.wall {
+  background-color: rgb(12, 53, 71);
+}
+
+.path {
+  animation-name: shortestPath;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes shortestPath {
+  0% {
+    transform: scale(0.6);
+    background-color: rgb(255, 254, 106);
+  }
+
+  50% {
+    transform: scale(1.2);
+    background-color: rgb(255, 254, 106);
+  }
+
+  100% {
+    transform: scale(1);
+    background-color: rgb(255, 254, 106);
+  }
 }
 
 .buttons {
@@ -89,7 +138,7 @@ body {
 }
 
 .visualize:hover {
-  background: #b97339;
+  background: #003152;
   color: #fff;
   transition: 300ms;
 }
